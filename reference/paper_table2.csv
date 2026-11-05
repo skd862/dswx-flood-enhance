@@ -1,0 +1,13 @@
+case,layer,class,BA,CSI,F1,Precision,Recall
+louisville_0408,bwtr,all,0.83,0.56,0.71,0.76,0.67
+louisville_0408,conf,all,0.89,0.65,0.79,0.76,0.81
+louisville_0409,bwtr,all,0.57,0.15,0.26,0.81,0.15
+louisville_0409,conf_no_partial,all,0.61,0.22,0.36,0.85,0.23
+louisville_0409,conf,all,0.63,0.24,0.38,0.68,0.27
+louisville_0409,conf,open_water_cloud,,0.96,0.98,0.96,
+louisville_0409,conf,partial_water_cloud,,0.31,0.47,0.31,
+harvey,bwtr,all,0.58,0.17,0.29,0.67,0.19
+harvey,conf_no_partial,all,0.61,0.22,0.37,0.72,0.25
+harvey,conf,all,0.66,0.32,0.48,0.48,0.49
+harvey,conf,open_water_cloud,,0.94,0.97,0.94,
+harvey,conf,partial_water_cloud,,0.36,0.53,0.36,

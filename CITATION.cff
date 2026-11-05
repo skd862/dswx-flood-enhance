@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the paper below (and FLEXTH / RS-FloodXdepth, see README)."
+title: "dswx-flood-enhance: replication code for 'Under cloud and canopy: enhancing DSWx-HLS flood maps with terrain-based flood propagation'"
+type: software
+license: MIT
+repository-code: "https://github.com/skd862/dswx-flood-enhance"
+authors:
+  - family-names: Do
+    given-names: Son Kim
+    affiliation: "Center for Hydrometeorology and Remote Sensing, University of California, Irvine"
+preferred-citation:
+  type: article
+  title: "Under cloud and canopy: enhancing the Dynamic Surface Water eXtent - Harmonized Landsat Sentinel-2 (DSWx-HLS) flood maps with terrain-based flood propagation"
+  authors:
+    - family-names: Do
+      given-names: Son Kim
+    - family-names: Munasinghe
+      given-names: Dinuke
+    - family-names: Tian
+      given-names: Dan
+    - family-names: Cohen
+      given-names: Sagy
+    - family-names: Eylander
+      given-names: John
+    - family-names: Crisanti
+      given-names: Sydney
+    - family-names: Tran
+      given-names: Duc
+    - family-names: Lakshmi
+      given-names: Venkataraman
+  journal: "ISPRS Journal of Photogrammetry and Remote Sensing"
+  volume: 243
+  start: 840
+  end: 858
+  year: 2027
+  doi: "10.1016/j.isprsjprs.2026.10.045"

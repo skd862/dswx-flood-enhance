@@ -1,0 +1,33 @@
+# Environment for dswx-flood-enhance (only what the five scripts import).
+#   conda env create -f environment.yml
+#   conda activate dswx-flood-enhance
+#
+# "nodefaults" matters: without it conda may mix in packages from the Anaconda "defaults" channel
+# (e.g. libglib built against ffi.dll next to conda-forge's libffi, which ships ffi-8.dll), and
+# OpenCV then fails with "ImportError: DLL load failed while importing cv2".
+name: dswx-flood-enhance
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.12
+  - numpy=2.2
+  - scipy=1.15
+  - pandas=2.2
+  - xarray=2025.3
+  - rioxarray=0.19
+  - rasterio=1.4
+  - gdal=3.10
+  - geopandas=1.1
+  - shapely=2.1
+  - pyproj=3.7
+  - opencv=4.11            # FLEXTH (connected components, morphology)
+  - astropy=7.0            # FLEXTH (NaN-aware convolution)
+  - matplotlib=3.10
+  - nbformat               # tools/make_notebooks.py
+  - jupyterlab             # to run the .ipynb versions
+# Optional:
+#   re-downloading the source data (01_prepare_inputs.py --download):
+#     conda install -c conda-forge earthaccess pystac-client requests earthengine-api
+#   running RS-FloodXdepth yourself (code from its developers, see 03_rsfloodxdepth.py):
+#     pip install ImageObject==1.19        (Windows wheel)

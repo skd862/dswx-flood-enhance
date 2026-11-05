@@ -1,0 +1,18 @@
+# everything written by the scripts
+outputs/
+
+# RS-FloodXdepth code obtained from its developers - not redistributable, never commit it
+third_party/rsfloodxdepth/*
+!third_party/rsfloodxdepth/README.md
+
+# Python / Jupyter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# OS / editors
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
