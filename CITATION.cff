@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "If you use this code or data, please cite the paper below (and FLEXTH / RS-FloodXdepth, see README)."
+message: "If you use this code or data, please cite the paper below."
 title: "dswx-flood-enhance: replication code for 'Under cloud and canopy: enhancing DSWx-HLS flood maps with terrain-based flood propagation'"
 type: software
 license: MIT

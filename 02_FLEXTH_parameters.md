@@ -55,8 +55,14 @@ flows uphill and is never spread farther than `d_max`.
 All other parameters were left at the developer's defaults for every run (Section 3.2 of the paper: most parameters only
 have a minor influence; D_max and A_1/2 - and in particular their ratio - dominate the extent).
 Minor exception: the two original Louisville BWTR + FABDEM runs used S_max = 1 and A_g = 1 km²; this repository
-uses the defaults for them too (effect <= 0.02; README, Sections 5-6). The border elevations are smoothed with
-FLEXTH's 5 x 5 window (the paper text says 3 x 3; the published results used the 5 x 5 code).
+uses the defaults for them too (effect <= 0.02). The border elevations are smoothed with FLEXTH's 5 x 5 window
+(the paper text says 3 x 3; the published results used the 5 x 5 code).
+
+**Differences from the published Table 3.** Besides the two runs above (<= 0.02) and Louisville 3DEP rows
+(<= 0.01, from re-warping the DEM with current GDAL), the four Louisville Apr 8 FLEXTH rows with the CONF and
+CONF-no-partial seeds differ by up to 0.05 (CSI 0.64-0.65 here vs. 0.60-0.61 published): in the paper they were
+scored with the DSWx land-cover class-200 permanent-water mask, while this repository scores every Louisville
+row with the JRC mask. The conclusions do not change.
 
 **How they were chosen.** D_max and A_1/2 were swept over {1, 5, 10, 20, 50, 100} with A_1/2 ≤ D_max
 (21 combinations) for every case / initial flood map / DEM. A large ratio spreads water over large areas
